@@ -1,4 +1,7 @@
 # Projet-BI
+Projet CESI eXia Toulouse - A3 : Adrien Meltzer, Cyril Corbon, Johan Dommergue, François Sigwald.
+
+Ce projet consiste en l'étude BI sur une entreprise fictive.
 
 ## Générateur de données 
 Le générateur de données permet de généré une suite de données pour l'un des serveurs du réseaux, 4 algorithmes de génération sont enregistrés :
