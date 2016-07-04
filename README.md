@@ -17,4 +17,15 @@ UML du générateur :
 
 ![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/uml-1.png?raw=true)
 
-Modélisation de la base de données (MERISE) : 
+## Modélisation de la base de données (MERISE) : 
+
+Le systeme d'information de PlasticBoX contient 4 base de données mysql
+
+Une base de données gère l'administration
+
+La deuxieme gère la production 
+
+La troisième gere le conditionement
+
+La derniere gere l'expedition 
+
