@@ -23,6 +23,8 @@ Le systeme d'information de PlasticBoX contient 4 base de données mysql
 
 Une base de données gère l'administration
 
+![alt tag](https://github.com/adrienelium/ Projet-BI/Administration.PNG?raw=true)
+
 La deuxieme gère la production 
 
 La troisième gere le conditionement
