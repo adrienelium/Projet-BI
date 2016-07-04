@@ -57,21 +57,21 @@ class Main {
     
     private function Fabrication()
     {
-        
+        echo 'Lancement de la fabrication';
     }
     
     private function Preparation()
     {
-        
+        echo 'Lancement de la préparation';
     }
     
     private function Administratif()
     {
-        
+        echo 'Lancement de la administratif';
     }
     
     private function Expedition()
     {
-        
+        echo 'Lancement de la expedition';
     }
 }

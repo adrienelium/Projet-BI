@@ -27,14 +27,14 @@
 
     echo 'Initialisation de la génération pour : '.$nomServer.'<br>';
     echo '-----------------------------------------------------<br>';
-    echo '-----------------------------------------------------<br>';
+    echo '-----------------------------------------------------<br><br>';
 
     $Programme = new Main($host,$user,$pass,$port);
 
     $Programme->Init($nomServer);
     $Programme->Start();
 
-    echo '<br>Génération terminée pour le serveur : '.$nomServer;
+    echo '<br><br>Génération terminée pour le serveur : '.$nomServer;
 ?>
 </body>
 </html>
