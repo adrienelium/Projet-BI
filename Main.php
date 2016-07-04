@@ -4,7 +4,7 @@ require('Connector.php');
 
 use Connector as Connect;
 
-public class Main {
+class Main {
     
     var $nomServeur; // Indique quel génération choisir : fab ; prepa ; admin ; cond
     
@@ -53,5 +53,25 @@ public class Main {
         }
         
         return true;
+    }
+    
+    private function Fabrication()
+    {
+        
+    }
+    
+    private function Preparation()
+    {
+        
+    }
+    
+    private function Administratif()
+    {
+        
+    }
+    
+    private function Expedition()
+    {
+        
     }
 }

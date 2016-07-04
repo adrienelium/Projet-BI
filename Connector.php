@@ -1,6 +1,6 @@
 <?php
 
-public class Connector {
+class Connector {
     
     var $connexion;
 
