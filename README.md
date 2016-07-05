@@ -5,6 +5,12 @@ Projet CESI eXia Toulouse - A3 : [Adrien Meltzer](https://github.com/adrienelium
 
 Ce projet consiste en l'étude d'une entreprise fictive : la société PlasticBoX, que l'on appelera par la suite PBX. L'entreprise existe depuis plus de 40 ans et est spécialisée dans la réalisation de boites en plastiques en tout genre. Elle souhaite par le biais d'une études BI (Business Intelligence) améliorer son système d'informations notamment sur la partie production, conditionnement et expédition.
 
+##Chronologie
+Ce projet a été découpé en 5 parties la documentation qui sera réalisé en parallele de toutes les autres taches, l'infrastructure qui sera à installer et à simuler, la modélisation et le developpement des générateurs de données, l'installation et le paramettrage de l'infrastructure NoSQL et enfin la gestion des statistique et la création des tableaux de bord.  
+Ce planning a été réalisé grâce a un planning poker 
+
+ ![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/Chronologie.PNG)
+
 ## Mind Map
 Une Mind map est un diagramme permettant de représenter et d'organiser des informations de façons visuelle. 
 La Mind map ci-dessous représente l'ensemble du spectre de notre projet que cela soit les contraintes, les problématiques, les livrables ou les objectifs 
