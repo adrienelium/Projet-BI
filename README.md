@@ -13,6 +13,8 @@ Ce planning a été réalisé grâce a un planning poker
 ![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/Chronologie.PNG)
 
 ## Mind Map
+Pour ce projet nous avons réalisé une mind map.
+Elle nous a permis de définir nos contraintes, objectif et problématique (à gauche) ainsi que le decoupage des taches de ce projet 
 
 ![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/Mindmap.PNG)
 
