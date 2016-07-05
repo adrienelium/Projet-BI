@@ -15,11 +15,11 @@
     // Seules les informations ci-dessous sont à retoucher lors de l'installation de la solution
     // ****************************************************************************************
 
-    $host = 'localhost';
+    $host = '192.168.0.101';
     $user = 'root';
-    $pass = '';
+    $pass = 'exia2016';
     $port = 3306;
-    $nomServer = 'xxx';
+    $nomServer = 'administratif';
 
     // ****************************************************************************************
     // Seules les informations ci-dessus sont à retoucher lors de l'installation de la solution
