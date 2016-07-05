@@ -5,7 +5,7 @@ Ce projet consiste en l'étude d'une entreprise fictive : la société PlasticBo
 
 ## Mind Map
 
-![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/Mindmap.png)
+![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/Mindmap.PNG)
 
 ## Générateur de données 
 Le générateur de données permet de généré une suite de données pour l'un des serveurs du réseaux, 4 algorithmes de génération sont enregistrés :
