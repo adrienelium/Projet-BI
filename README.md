@@ -5,16 +5,7 @@ Projet CESI eXia Toulouse - A3 : [Adrien Meltzer](https://github.com/adrienelium
 
 Ce projet consiste en l'étude d'une entreprise fictive : la société PlasticBoX, que l'on appelera par la suite PBX. L'entreprise existe depuis plus de 40 ans et est spécialisée dans la réalisation de boites en plastiques en tout genre. Elle souhaite par le biais d'une études BI (Business Intelligence) améliorer son système d'informations notamment sur la partie production, conditionnement et expédition.
 
-## Chronologie
-
-Ce projet a été découpé en 5 parties la documentation qui sera réalisé en parallele de toutes les autres taches, l'infrastructure qui sera à installer et à simuler, la modélisation et le developpement des générateurs de données, l'installation et le paramettrage de l'infrastructure NoSQL et enfin la gestion des statistique et la création des tableaux de bord.  
-Ce planning a été réalisé grâce a un planning poker 
-
-![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/Chronologie.PNG)
-
 ## Mind Map
-Les Mind map sont des diagrammes permettants de visualisé l'information.
-La mind map ci dessous represente l'ensemble du spectre de notre projet et details les objectifs, contraintes, problématiques et enfin les livrables.
 
 ![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/Mindmap.PNG)
 
@@ -52,4 +43,18 @@ La troisième base de données gère le **service de conditionnement**, elle per
 Enfin la base de données du **service expedition** permet d'avoir les informations sur le type d'envoie du produit fini ainsi que d'autres informations tels que sa date d'expidition ou son type de pallete 
 
 ![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/expedition.jpg)
+
+Maquette Réseau:
+
+Chaque bâtiments est sur un sous réseau différent. Un Vlan représente un sous réseau: en effet il y a :
+Le vlan application : Il possède un serveur DNS, un serveur DHCP  un serveur stockant la base de donnée NoSQL et des postes utilisateurs. Il a pour adresse de réseau 192.168.3.0 et pour masque: 255.255.255.0.
+
+Le vlan fabrication: Il possède un serveur hébergeant une base de données mysql et des postes utilisateurs. Il a pour adresse de réseau 192.168.0.0 et pour masque 255.255.255.0.
+
+Le vlan préparation: Il possède un serveur hébergeant une base de données mysql et des postes utilisateurs. Il a pour adresse réseau: 192.168.1.0 et pour masque 255.255.255.0.
+
+Pour finir, il y a le vlan expedition qui possède également une base de données mysql et des postes utilisateurs. Il a pour adresse réseau 192.168.2.0 et pour masque 255.255.255.0.
+
+
+- 
 
