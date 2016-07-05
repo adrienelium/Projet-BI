@@ -30,11 +30,11 @@ La deuxieme base de données gère le service de production, elle permet de gere
 ![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/fabrication.jpg)
 
 
-La troisième gere le conditionement
+La troisième base de données gère le service de conditionnement, elle permet d'avoir les informations sur la chaine de conditionnement soit : l'ensemble des produits qui doivent etre conditionnés, les différents état des machines et les différentes pannes (ou maintenances) effectués sur ces même machine.
 
 ![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/conditionnement.jpg)
 
-La derniere gere l'expedition 
+Enfin la base de données du service expedition permet d'avoir les informations sur le type d'envoie du produit fini ainsi que d'autres informations tels que sa date d'expidition ou son type de pallete 
 
 ![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/expedition.jpg)
 
