@@ -45,7 +45,7 @@ Enfin la base de données du **service expedition** permet d'avoir les informati
 ![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/expedition.jpg)
 
 Maquette Réseau:
-
+![alt tag](https://github.com/adrienelium/Projet-BI/blob/masterMaquette Architecture.JPG)
 Chaque bâtiments est sur un sous réseau différent. Un Vlan représente un sous réseau: en effet il y a :
 Le vlan application : Il possède un serveur DNS, un serveur DHCP  un serveur stockant la base de donnée NoSQL et des postes utilisateurs. Il a pour adresse de réseau 192.168.3.0 et pour masque: 255.255.255.0.
 
