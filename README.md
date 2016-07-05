@@ -7,6 +7,9 @@ Ce projet consiste en l'étude d'une entreprise fictive : la société PlasticBo
 
 ## Chronologie
 
+Ce projet a été découpé en 5 parties la documentation qui sera réalisé en parallele de toutes les autres taches, l'infrastructure qui sera à installer et à simuler, la modélisation et le developpement des générateurs de données, l'installation et le paramettrage de l'infrastructure NoSQL et enfin la gestion des statistique et la création des tableaux de bord.  
+Ce planning a été réalisé grâce a un planning poker 
+
 ![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/Chronologie.PNG)
 
 ## Mind Map
