@@ -29,7 +29,14 @@ Cette base permet de traiter l'ensemble des éléments correspondant à une comm
 
 La deuxieme gère la production 
 
+![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/fabrication.jpg)
+
+
 La troisième gere le conditionement
 
+![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/conditionnement.jpg)
+
 La derniere gere l'expedition 
+
+![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/expedition.jpg)
 
