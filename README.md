@@ -6,7 +6,7 @@ Projet CESI eXia Toulouse - A3 : [Adrien Meltzer](https://github.com/adrienelium
 Ce projet consiste en l'étude d'une entreprise fictive : la société PlasticBoX, que l'on appelera par la suite PBX. L'entreprise existe depuis plus de 40 ans et est spécialisée dans la réalisation de boites en plastiques en tout genre. Elle souhaite par le biais d'une études BI (Business Intelligence) améliorer son système d'informations notamment sur la partie production, conditionnement et expédition.
 
 ##Diagramme de Gantt
-![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/Projet1 (1).mpp)
+![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/Gantt.mpp)
 
 ##Chronologie
 Ce projet a été découpé en 5 parties la documentation qui sera réalisé en parallele de toutes les autres taches, l'infrastructure qui sera à installer et à simuler, la modélisation et le developpement des générateurs de données, l'installation et le paramettrage de l'infrastructure NoSQL et enfin la gestion des statistique et la création des tableaux de bord.  
