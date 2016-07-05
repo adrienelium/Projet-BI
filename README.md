@@ -21,9 +21,11 @@ UML du générateur :
 
 Le systeme d'information de PlasticBoX contient 4 base de données mysql
 
-Une base de données gère l'administration
+Une base de données gère l'administration 
+Cette base permet de traiter l'ensemble des éléments correspondant à une commandes tels que : les pieces, les produit, les client, les pays ...) 
 
-![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/Administration.PNG)
+
+![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/administration.jpg)
 
 La deuxieme gère la production 
 
