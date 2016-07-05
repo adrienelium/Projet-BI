@@ -44,7 +44,7 @@ Enfin la base de données du **service expedition** permet d'avoir les informati
 
 ![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/expedition.jpg)
 
-Maquette Réseau:
+##Maquette Réseau:
 ![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/Maquette Architecture.JPG)
 Chaque bâtiments est sur un sous réseau différent. Un Vlan représente un sous réseau: en effet il y a :
 Le vlan application : Il possède un serveur DNS, un serveur DHCP  un serveur stockant la base de donnée NoSQL et des postes utilisateurs. Il a pour adresse de réseau 192.168.3.0 et pour masque: 255.255.255.0.
@@ -54,7 +54,3 @@ Le vlan fabrication: Il possède un serveur hébergeant une base de données mys
 Le vlan préparation: Il possède un serveur hébergeant une base de données mysql et des postes utilisateurs. Il a pour adresse réseau: 192.168.1.0 et pour masque 255.255.255.0.
 
 Pour finir, il y a le vlan expedition qui possède également une base de données mysql et des postes utilisateurs. Il a pour adresse réseau 192.168.2.0 et pour masque 255.255.255.0.
-
-
-- 
-
