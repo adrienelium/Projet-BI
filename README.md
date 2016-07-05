@@ -1,4 +1,4 @@
-                                                      #Projet-BI
+#Projet-BI
 
 Projet CESI eXia Toulouse - A3 : [Adrien Meltzer](https://github.com/adrienelium), [Cyril Corbon](https://github.com/cyril-corbon), [Johan Dommergue](https://github.com/johanndom), [François Sigwald](https://github.com/Fitouf).
 
