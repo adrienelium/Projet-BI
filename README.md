@@ -85,3 +85,17 @@ Le vlan fabrication: Il possède un serveur hébergeant une base de données mys
 Le vlan préparation: Il possède un serveur hébergeant une base de données mysql et des postes utilisateurs. Il a pour adresse réseau: 192.168.1.0 et pour masque 255.255.255.0.
 
 Pour finir, il y a le vlan expedition qui possède également une base de données mysql et des postes utilisateurs. Il a pour adresse réseau 192.168.2.0 et pour masque 255.255.255.0.
+
+
+
+##Installation des VM et création des bases de données
+
+Comme vu précédemment, l'entreprise est divisée en quatre bâtiments distincts comprenant chacun une base de données (le bâtiment administration est également composé de la base NoSQL). 
+
+Les serveurs administration, fabrication, préparation, fabrication et préparation ont été crées sur quatre VM debian distinctes dotées d'un serveur web Apache. Les quatre bases de données ont été crées sur un serveur de bases de données Mysql. Ils ont pour adresse respective:
+Serveur administration: 192.168.0.101
+Serveur préparation: 192.168.0.102
+Serveur fabrication: 192.168.0.103
+Serveur expedition: 192.168.0.104
+
+Le serveur NoSQL, quand à lui, a été" installé sur Windows 7 et utilise le SGBD CouchDB qui va permettre la répartition des données sur les différents serveurs. Les données renvoyées sont au format JSON.
