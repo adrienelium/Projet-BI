@@ -90,6 +90,14 @@ Le vlan préparation: Il possède un serveur hébergeant une base de données my
 
 Pour finir, il y a le vlan expedition qui possède également une base de données mysql et des postes utilisateurs. Il a pour adresse réseau 192.168.2.0 et pour masque 255.255.255.0.
 
+Mise en place du protocole VTP:
+Le protocole VTP permet de configurer et administrer des VLAN. Il fonctionne sous trois modes: client, serveur transparent.
+En mode serveur, il est possible de créer, modifier ou supprimer des vlans Et de les transmettre aux clients. Les vlan sont crées sur les coeurs de réseaux de l'entreprise, puis sont répartis sur les différents switchs. Les coeurs de réseau sont en mode server et les switchs sont en mode client.
+
+Mise en place du protocole Spanning-tree :
+
+L'objectif du protocole Spanning-tree est de vérifier qu'il n'y ai pas de boucle dans le réseau. Il est mis en place sur les switchs
+
 Afin de gérer la redondance de la maquette, tous les switchs et routeurs ont été doublés. De plus, le protocole Spanning-tree a été utilisé afin d'avoir une redondance optimisée au maximum.
 
 
