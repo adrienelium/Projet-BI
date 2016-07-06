@@ -75,6 +75,10 @@ Enfin la base de données du **service expedition** permet d'avoir les informati
 
 ![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/expedition.jpg)
 
+
+##Adressage IP:
+![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/Adressage.JPG)
+L'entreprise se divise en quatre sous réseaux (un pour chaque Vlan). Chaque sous réseau peut avoir un total de 254 utilisateurs. 
 ##Maquette Réseau:
 ![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/Maquette réseau.JPG)
 Chaque bâtiments est sur un sous réseau différent. Un Vlan représente un sous réseau: en effet il y a :
