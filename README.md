@@ -8,6 +8,26 @@ Ce projet consiste en l'étude d'une entreprise fictive : la société PlasticBo
 ##Diagramme de Gantt
 ![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/gantt.JPG)
 
+Nous avons divisé le projet en cinq parties principales, à savoir:
+les parties infrastructure, développement des simulateurs, création de la base de données NoSQL et la gestion des statistiques.
+
+Infrastructure:
+Divisée en quatre sous parties, la partie infrastructure comprend:
+L'installation et le paramètrage des serveurs sur les VM, l'installation des bases de données sur ces serveurs, et le maquettage de l'architecture réseau à l'aide de packet tracer.
+
+Développement des simulateurs:
+La partie développement des simulateurs comprend:
+La création d'un Github afin de regrouper les différentes parties du projet, la modélisation des tables merise et UML et la création des scripts de génération de données. 
+
+Création de la base de données NoSQL:
+La partie création de la base de données NoSQL comprend:
+L'installation de la base et la création de l'ETL.
+
+Gestion des statistiques:
+Cette partie comprend: Le calcul des statistiques pour chaque zones de production, le choix et la mise en place des indicateurs et la création des différents dashboard.
+
+Pour finir, une partie document comprend le Github qui présente l'ensemble du projet et le power point à présenter lors de la soutenance.
+
 ##Chronologie
 Ce projet a été découpé en 5 parties la documentation qui sera réalisé en parallele de toutes les autres taches, l'infrastructure qui sera à installer et à simuler, la modélisation et le developpement des générateurs de données, l'installation et le paramettrage de l'infrastructure NoSQL et enfin la gestion des statistique et la création des tableaux de bord.  
 Ce planning a été réalisé grâce a un planning poker 
@@ -65,15 +85,3 @@ Le vlan fabrication: Il possède un serveur hébergeant une base de données mys
 Le vlan préparation: Il possède un serveur hébergeant une base de données mysql et des postes utilisateurs. Il a pour adresse réseau: 192.168.1.0 et pour masque 255.255.255.0.
 
 Pour finir, il y a le vlan expedition qui possède également une base de données mysql et des postes utilisateurs. Il a pour adresse réseau 192.168.2.0 et pour masque 255.255.255.0.
-
-##Description de l'infrastructure réseaux mise en place 
-
-Pour ce projet 5 serveur on était mis en place 
-
-##ETL et base de données CouchDB 
-
-##Indicateur
-
-##Tableau de bord
-
-
