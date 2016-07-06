@@ -68,6 +68,12 @@ Pour finir, il y a le vlan expedition qui possède également une base de donné
 
 ##Description de l'infrastructure réseaux mise en place 
 
-Pour ce projet 5 serveur on était mis en place : 
+Pour ce projet 5 serveur on était mis en place 
 
- 
+##ETL et base de données CouchDB 
+
+##Indicateur
+
+##Tableau de bord
+
+
