@@ -65,3 +65,9 @@ Le vlan fabrication: Il possède un serveur hébergeant une base de données mys
 Le vlan préparation: Il possède un serveur hébergeant une base de données mysql et des postes utilisateurs. Il a pour adresse réseau: 192.168.1.0 et pour masque 255.255.255.0.
 
 Pour finir, il y a le vlan expedition qui possède également une base de données mysql et des postes utilisateurs. Il a pour adresse réseau 192.168.2.0 et pour masque 255.255.255.0.
+
+##Description de l'infrastructure réseaux mise en place 
+
+Pour ce projet 5 serveur on était mis en place : 
+
+ 
