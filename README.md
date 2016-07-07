@@ -115,6 +115,17 @@ Serveur expedition: 192.168.0.104
 Le serveur NoSQL, quand à lui, a été" installé sur Windows 7 et utilise le SGBD CouchDB qui va permettre la répartition des données sur les différents serveurs. Les données renvoyées sont au format JSON.
 
 ##Définitions des indicateurs et des KPI
+###Gestion des commandes
+
+###Gestion de la satisfaction 
+
+###Gestion de la fabrication 
+
+###Gestion du conditionnement
+
+###Gestion de l'expedition 
+
+###Gestion du CA et de la marge 
 
 ##DashBoard
 ![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/DashBoard_Commande.PNG)
