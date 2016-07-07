@@ -117,3 +117,4 @@ Le serveur NoSQL, quand à lui, a été" installé sur Windows 7 et utilise le S
 ##Définitions des indicateurs et des KPI
 
 ##DashBoard
+![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/DashBoard_Commande.PNG)
