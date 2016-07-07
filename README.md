@@ -118,6 +118,8 @@ Le serveur NoSQL, quand à lui, a été" installé sur Windows 7 et utilise le S
 Dans cette partis tous les indicateurs que nous avons définis seront présentés cependant ils ne seront pas tous représentés dans les dashboards. 
 
 ###Gestion des commandes
+Le but de ces indicateurs est de montrer l'évolution des ventes de l'entreprise ainsi que ces statistique comme le taux d'annulation (nombre d'annulation sur le nombre de commande) ou encore la marge effectué par commande. De plus on peut lier ces données (nombre de piece / de produit / d'annulation) à des données geographique ceci nous permet d'avoir une idée du marché mondial ainsi que de ces évolutions.
+
 La gestion des commandes dispose de plusieurs indicateurs tels que : <br/>
   - Le nombre de commandes par entreprise  <br/>
   - Le nombre de commandes passé sur le nombre de commande expédié <br/>
@@ -137,9 +139,6 @@ La gestion des commandes dispose de plusieurs indicateurs tels que : <br/>
   - Le nombre d'annulation sur le nombre de commandes   <br/>
   - Le nombre d'annulation par produit  <br/>
   - Le nombre de réponse au sondage par pays  <br/>
-
-Le but de ces indicateurs est de montrer l'évolution des ventes de l'entreprise ainsi que ces statistique comme le taux d'annulation (nombre d'annulation sur le nombre de commande) ou encore la marge effectué par commande. De plus on peut lier ces données (nombre de piece / de produit / d'annulation) à des données geographique ceci nous permet d'avoir une idée du marché mondial ainsi que de ces évolutions.
-
 
 ###Gestion de la satisfaction 
 
