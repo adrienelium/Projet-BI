@@ -119,47 +119,45 @@ Dans cette partis tous les indicateurs que nous avons définis seront présenté
 
 ###Gestion des commandes
 La gestion des commandes dispose de plusieurs indicateurs tels que : <br/>
-  -Le nombre de commandes par entreprise  <br/>
-  -Le nombre de commandes passé sur le nombre de commande expédié <br/>
-  -Le	nombre de commandes par pays <br/>
-  -Le	nombre de produits par commande <br/>
-  -Le nombre commande annulé sur le nombre de commande passé <br/>
-  -Le chiffre d'affaire par commande <br/>
-  -La marge par commande <br/>
-  -Le nombre de colis expédié par commande <br/>
-  -Le nombre de produit par entreprise <br/>
-  -Le nombre de pieces par pays  <br/>
-  -Le nombre de pieces par entreprise <br/>
-  -Le nombre de piece par ans et par mois <br/>
-  -Le nombre de produit par ans et par mois <br/>
-  -Le nombre de produit vendu sur le nombre de piece vendu par ans   <br/>
-  -Le nombre de commande par rapport a l'age   <br/>
-  -Le nombre d'annulations par entreprise    <br/>
-  -Le nombre d'annulation sur le nombre de commandes   <br/>
-  -Le nombre d'annulation par produit  <br/>
-  -Le nombre de réponse au sondage par pays  <br/>
+  - Le nombre de commandes par entreprise  <br/>
+  - Le nombre de commandes passé sur le nombre de commande expédié <br/>
+  - Le	nombre de commandes par pays <br/>
+  - Le	nombre de produits par commande <br/>
+  - Le nombre commande annulé sur le nombre de commande passé <br/>
+  - Le chiffre d'affaire par commande <br/>
+  - La marge par commande <br/>
+  - Le nombre de colis expédié par commande <br/>
+  - Le nombre de produit par entreprise <br/>
+  - Le nombre de pieces par pays  <br/>
+  - Le nombre de pieces par entreprise <br/>
+  - Le nombre de piece par ans et par mois <br/>
+  - Le nombre de produit par ans et par mois <br/>
+  - Le nombre de produit vendu sur le nombre de piece vendu par ans   <br/>
+  - Le nombre de commande par rapport a l'age   <br/>
+  - Le nombre d'annulations par entreprise    <br/>
+  - Le nombre d'annulation sur le nombre de commandes   <br/>
+  - Le nombre d'annulation par produit  <br/>
+  - Le nombre de réponse au sondage par pays  <br/>
 
 
 ###Gestion de la satisfaction 
 
-  -La satisfaction par pays <br/>
-  -La satisfaction par nombre de pannes par machine <br/>
-  -La satisfaction par entreprise  <br/>
-  -La satisfaction par rapport à l’âge du client  <br/>
+  - La satisfaction par pays <br/>
+  - La satisfaction par nombre de pannes par machine <br/>
+  - La satisfaction par entreprise  <br/>
+  - La satisfaction par rapport à l’âge du client  <br/>
 
 ###Gestion de la fabrication 
-  -Le prix de fabrication sur le prix d’une pièce  <br/>
-  -Le nombre de panne par mois et par année  <br/>
-  -Le nombre de panne par rapport au délai <br/>
-  -Le nombre de maintenance par mois et par années <br/>
-  -Le nombre de panne par machine <br/>
-  -Le nombre de maintenance par machine <br/>
-  -Le nombre de panne sur nombre de maintenance <br/>
-  -La moyenne du temps prévu sur le temps réel <br/>
-  -Le nombre de pièce en stock <br/>
-  -Le temps entre le stock et la vente <br/>
-
-  
+  - Le prix de fabrication sur le prix d’une pièce  <br/>
+  - Le nombre de panne par mois et par année  <br/>
+  - Le nombre de panne par rapport au délai <br/>
+  - Le nombre de maintenance par mois et par années <br/>
+  - Le nombre de panne par machine <br/>
+  - Le nombre de maintenance par machine <br/>
+  - Le nombre de panne sur nombre de maintenance <br/>
+  - La moyenne du temps prévu sur le temps réel <br/>
+  - Le nombre de pièce en stock <br/>
+  - Le temps entre le stock et la vente <br/>
 
 
 ###Gestion du conditionnement
@@ -173,22 +171,22 @@ La gestion des commandes dispose de plusieurs indicateurs tels que : <br/>
   -	Le nombre de conditionnement sur Nombre de fabrication  <br/>
 
 ###Gestion de l'expedition 
-  -Le nombre de colis partis en avions   <br/>
-  -Le	nombre de colis partis en semi-remorque   <br/>
-  -Le	nombre d’expédition par mois et par ans  <br/>
-  -Le temps prévu de l’expédition sur le temps réel   <br/>
-  -Le nombre de colis par entreprise  <br/>
-  -Le	nombre de colis par pays   <br/>
+  - Le nombre de colis partis en avions   <br/>
+  - Le	nombre de colis partis en semi-remorque   <br/>
+  - Le	nombre d’expédition par mois et par ans  <br/>
+  - Le temps prévu de l’expédition sur le temps réel   <br/>
+  - Le nombre de colis par entreprise  <br/>
+  - Le	nombre de colis par pays   <br/>
 
   
 ###Gestion du CA et de la marge 
-  -la marge par pays  <br/>
-  -La marge par client <br/>
-  -le chiffre d’affaire par pays <br/> 
-  -Le chiffre d’affaire par produit <br/>
-  -Le chiffre d’affaire par entreprise <br/>
-  -Le chiffre d'affaire par ans <br/>
-  -Le chiffre d'affaire de l'année sur celui de l'année passé <br/> 
+  - La marge par pays  <br/>
+  - La marge par client <br/>
+  - Le chiffre d’affaire par pays <br/> 
+  - Le chiffre d’affaire par produit <br/>
+  - Le chiffre d’affaire par entreprise <br/>
+  - Le chiffre d'affaire par ans <br/>
+  - Le chiffre d'affaire de l'année sur celui de l'année passé <br/> 
 
 
 ##DashBoards
