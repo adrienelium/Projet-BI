@@ -132,12 +132,12 @@ La gestion des commandes dispose de plusieurs indicateurs tels que : <br/>
   -Le nombre de pieces par entreprise <br/>
   -Le nombre de piece par ans et par mois <br/>
   -Le nombre de produit par ans et par mois <br/>
-  -Le nombre de produit vendu sur le nombre de piece vendu par ans
-  -Le nombre de commande par rapport a l'age
-  -Le nombre d'annulations par entreprise 
-  -Le nombre d'annulation sur le nombre de commandes
-  -Le nombre d'annulation par produit
-  -Le nombre de réponse au sondage par pays
+  -Le nombre de produit vendu sur le nombre de piece vendu par ans   <br/>
+  -Le nombre de commande par rapport a l'age   <br/>
+  -Le nombre d'annulations par entreprise    <br/>
+  -Le nombre d'annulation sur le nombre de commandes   <br/>
+  -Le nombre d'annulation par produit  <br/>
+  -Le nombre de réponse au sondage par pays  <br/>
 
 
 ###Gestion de la satisfaction 
