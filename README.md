@@ -173,12 +173,12 @@ La gestion des commandes dispose de plusieurs indicateurs tels que : <br/>
   -	Le nombre de conditionnement sur Nombre de fabrication  <br/>
 
 ###Gestion de l'expedition 
-  -Le nombre de colis partis en avions
-  -Le	nombre de colis partis en semi-remorque
-  -Le	nombre d’expédition par mois et par ans
-  -Le temps prévu de l’expédition sur le temps réel 
-  -Le nombre de colis par entreprise
-  -Le	nombre de colis par pays 
+  -Le nombre de colis partis en avions   <br/>
+  -Le	nombre de colis partis en semi-remorque   <br/>
+  -Le	nombre d’expédition par mois et par ans  <br/>
+  -Le temps prévu de l’expédition sur le temps réel   <br/>
+  -Le nombre de colis par entreprise  <br/>
+  -Le	nombre de colis par pays   <br/>
 
   
 ###Gestion du CA et de la marge 
