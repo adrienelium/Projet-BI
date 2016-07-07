@@ -115,15 +115,18 @@ Serveur expedition: 192.168.0.104
 Le serveur NoSQL, quand à lui, a été" installé sur Windows 7 et utilise le SGBD CouchDB qui va permettre la répartition des données sur les différents serveurs. Les données renvoyées sont au format JSON.
 
 ##Définitions des indicateurs et des KPI
+Dans cette partis tous les indicateurs que nous avons définis seront présentés cependant ils ne seront pas tous représentés dans les dashboards. 
+
 ###Gestion des commandes
 La gestion des commandes dispose de plusieurs indicateurs tels que : <br/>
-  -Le nombre de commandes par entreprise  
-  -Le nombre de commandes passé / nombre de commande expédier
-  -Le	nombre de commandes par pays
-  -Le	nombre de produits par commande
-  -le nombre commande annulé / nombre de commande passer 
-  -le chiffre d'affaire par commande 
-  -la marge par commande
+  -Le nombre de commandes par entreprise  <br/>
+  -Le nombre de commandes passé / nombre de commande expédié <br/>
+  -Le	nombre de commandes par pays <br/>
+  -Le	nombre de produits par commande <br/>
+  -Le nombre commande annulé / nombre de commande passer <br/>
+  -Le chiffre d'affaire par commande <br/>
+  -La marge par commande <br/>
+  -Le Nombre de colis expédié par commande <br/>
 
 ###Gestion de la satisfaction 
 
