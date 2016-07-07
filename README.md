@@ -113,3 +113,7 @@ Serveur fabrication: 192.168.0.103
 Serveur expedition: 192.168.0.104
 
 Le serveur NoSQL, quand à lui, a été" installé sur Windows 7 et utilise le SGBD CouchDB qui va permettre la répartition des données sur les différents serveurs. Les données renvoyées sont au format JSON.
+
+##Définitions des indicateurs et des KPI
+
+##DashBoard
