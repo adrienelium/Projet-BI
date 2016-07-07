@@ -117,13 +117,13 @@ Le serveur NoSQL, quand à lui, a été" installé sur Windows 7 et utilise le S
 ##Définitions des indicateurs et des KPI
 ###Gestion des commandes
 La gestion des commandes dispose de plusieurs indicateurs tels que : 
- -Le nombre de commandes par entreprise 
- -Le nombre de commandes passé / nombre de commande expédier
- -Le	nombre de commandes par pays
- -Le	nombre de produits par commande
- -le nombre commande annulé / nombre de commande passer 
- -le chiffre d'affaire par commande 
- -la marge par commande
+  -Le nombre de commandes par entreprise 
+  -Le nombre de commandes passé / nombre de commande expédier
+  -Le	nombre de commandes par pays
+  -Le	nombre de produits par commande
+  -le nombre commande annulé / nombre de commande passer 
+  -le chiffre d'affaire par commande 
+  -la marge par commande
 
 ###Gestion de la satisfaction 
 
