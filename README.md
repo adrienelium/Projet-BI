@@ -130,19 +130,19 @@ La gestion des commandes dispose de plusieurs indicateurs tels que : <br/>
 
 ###Gestion de la satisfaction 
 
-  -La satisfaction par pays
-  -La satisfaction par nombre de pannes par machine
-  -La satisfaction par entreprise 
-  -La satisfaction par rapport à l’âge du client 
+  -La satisfaction par pays <br/>
+  -La satisfaction par nombre de pannes par machine <br/>
+  -La satisfaction par entreprise  <br/>
+  -La satisfaction par rapport à l’âge du client  <br/>
 
 ###Gestion de la fabrication 
-  -Prix de fabrication sur le prix d’une pièce 
-  -Nombre de panne par mois et par année 
-  -Nombre de panne par rapport au délai
-  -Nombre de maintenance par mois et par années 
-  -Nombre de panne par machine
-  -Nombre de maintenance par machine
-  -Nombre de panne sur nombre de maintenance
+  -Prix de fabrication sur le prix d’une pièce  <br/>
+  -Nombre de panne par mois et par année  <br/>
+  -Nombre de panne par rapport au délai <br/>
+  -Nombre de maintenance par mois et par années <br/>
+  -Nombre de panne par machine <br/>
+  -Nombre de maintenance par machine <br/>
+  -Nombre de panne sur nombre de maintenance <br/>
 
 
 ###Gestion du conditionnement
