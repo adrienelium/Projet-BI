@@ -127,5 +127,8 @@ Le serveur NoSQL, quand à lui, a été" installé sur Windows 7 et utilise le S
 
 ###Gestion du CA et de la marge 
 
-##DashBoard
+##DashBoards
 ![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/DashBoard_Commande.PNG)
+
+##Conclusion
+Pour conclure sur la réalisation du projet, nous conseillons une nouvelle architecture réseaux plus adaptée, les tableaux de bords traitant les données de l’entreprise ci-dessus permettent l’aide à la décision des décisionnaires de l’entreprise PlasticBox.
