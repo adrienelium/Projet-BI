@@ -63,11 +63,231 @@ class Main {
     private function Fabrication()
     {
         echo 'Lancement de la fabrication';
+        
+        $adminbase = new Connect();
+        $adminbase->init('192.168.0.101','root','exia2016',3306);
+        
+        $tab = $adminbase->req("SELECT * FROM Commandes");
+        //print_r($tab);
+        
+        foreach($tab as $ligne)
+        {
+            $idFab = $ligne[0];
+            
+            $str = "INSERT INTO Fabrication (Id_fabrication,Temps_fabrication,Date_fabrication,Num_cmd) VALUES ('".$idFab."','".rand(1,3)."','".$ligne[2]."','".$ligne[1]."')";
+            //echo $str;
+            $this->connector->req($str);
+            
+            $tabtempspe = $adminbase->req("SELECT * FROM Commander_piece NATURAL JOIN Piece WHERE Id_commande = '".$ligne[1]."'");
+            
+            if (count($tabtempspe) == 0)
+            {
+                $tabtemp = array();
+                
+                
+                $str = "SELECT * FROM Ligne WHERE Id_commande = '".$ligne[1]."'";
+                $tabtemp2 = $adminbase->req($str);
+                //echo $str;
+                //print_r($tabtemp2);
+                //exit;
+                foreach($tabtemp2 as $value)
+                {
+                    $res = $adminbase->req("SELECT * FROM Avoir NATURAL JOIN Piece WHERE Id_produit = '".$value[1]."'");
+                    
+                    foreach($res as $value2)
+                    {
+                        array_push($tabtemp,$value2);
+                    }
+                    
+                }
+                
+            }
+            else
+            {
+                $tabtemp = array();
+                // CODER ICI la prise de ligne de la tabl piece, puis mettre les lignes dans tabtemps
+                foreach($tabtempspe as $value3)
+                {
+                    array_push($tabtemp,$value3);
+                }
+            }
+            
+            foreach($tabtemp as $ligne4)
+            {
+                $str = "INSERT INTO piece_a_fabrique (Reference_piece,Description_piece,Prix_unite,Date_debut_fabrication,Temps_prevu,Temps_reel,Fin_machine_fabrication_A,Fin_machine_fabrication_B,Fin_machine_fabrication_C,Id_fabrication) VALUES ('".$ligne4[2]."','".$ligne4[3]."','".$ligne4[4]."','".$ligne[2]."','".rand(1,3)."','".rand(1,3)."','".rand(0,1)."','0','0','".$idFab."')";
+                
+                //echo $str;
+                
+                $this->connector->req($str); 
+         
+            }
+            
+            if ($idFab < 30)
+            {
+                if (rand(1,50000) == 1)
+                {
+                    $idEventvent = $idFab;
+                    $date = new DateTime();
+                    
+                    $machine = rand(1,8);
+                    
+                    switch ($machine)
+                    {
+                        case 1:
+                            $this->connector->req("INSERT INTO Evenement_fabrication (Id_event_fabrication,Date_event_fabrication,Panne_machine_A_fabrication,Panne_machine_B_fabrication,Panne_machine_C_fabrication,Maintenance_machine_A_fabrication,Maintenance_machine_B_fabrication,Maintenance_machine_C_fabrication) VALUES ('".$idEventvent."','".$date->format('Y-m-d H:i:s').",'1','0','0','0','0','0')");
+                            
+                            $this->connector->req("INSERT INTO Event_fabrication (Id_fabrication,Id_event_fabrication) VALUES ('".$idFab."','".$idEventvent."'");
+                            
+                            break;
+                        case 2:
+                            $this->connector->req("INSERT INTO Evenement_fabrication (Id_event_fabrication,Date_event_fabrication,Panne_machine_A_fabrication,Panne_machine_B_fabrication,Panne_machine_C_fabrication,Maintenance_machine_A_fabrication,Maintenance_machine_B_fabrication,Maintenance_machine_C_fabrication) VALUES ('".$idEventvent."','".$date->format('Y-m-d H:i:s').",'0','1','0','0','0','0')");
+                            
+                            $this->connector->req("INSERT INTO Event_fabrication (Id_fabrication,Id_event_fabrication) VALUES ('".$idFab."','".$idEventvent."'");
+                            
+                            break;
+                        case 3:
+                            $this->connector->req("INSERT INTO Evenement_fabrication (Id_event_fabrication,Date_event_fabrication,Panne_machine_A_fabrication,Panne_machine_B_fabrication,Panne_machine_C_fabrication,Maintenance_machine_A_fabrication,Maintenance_machine_B_fabrication,Maintenance_machine_C_fabrication) VALUES ('".$idEventvent."','".$date->format('Y-m-d H:i:s').",'0','0','1','0','0','0')");
+                            
+                            $this->connector->req("INSERT INTO Event_fabrication (Id_fabrication,Id_event_fabrication) VALUES ('".$idFab."','".$idEventvent."'");
+                            
+                            break;
+                        case 4:
+                            $this->connector->req("INSERT INTO Evenement_fabrication (Id_event_fabrication,Date_event_fabrication,Panne_machine_A_fabrication,Panne_machine_B_fabrication,Panne_machine_C_fabrication,Maintenance_machine_A_fabrication,Maintenance_machine_B_fabrication,Maintenance_machine_C_fabrication) VALUES ('".$idEventvent."','".$date->format('Y-m-d H:i:s').",'0','0','0','1','0','0')");
+                            
+                            $this->connector->req("INSERT INTO Event_fabrication (Id_fabrication,Id_event_fabrication) VALUES ('".$idFab."','".$idEventvent."'");
+                            
+                            break;
+                        case 5:
+                            $this->connector->req("INSERT INTO Evenement_fabrication (Id_event_fabrication,Date_event_fabrication,Panne_machine_A_fabrication,Panne_machine_B_fabrication,Panne_machine_C_fabrication,Maintenance_machine_A_fabrication,Maintenance_machine_B_fabrication,Maintenance_machine_C_fabrication) VALUES ('".$idEventvent."','".$date->format('Y-m-d H:i:s').",'0','0','0','0','1','0')");
+                            
+                            $this->connector->req("INSERT INTO Event_fabrication (Id_fabrication,Id_event_fabrication) VALUES ('".$idFab."','".$idEventvent."'");
+                            
+                            break;
+                        case 6:
+                            $this->connector->req("INSERT INTO Evenement_fabrication (Id_event_fabrication,Date_event_fabrication,Panne_machine_A_fabrication,Panne_machine_B_fabrication,Panne_machine_C_fabrication,Maintenance_machine_A_fabrication,Maintenance_machine_B_fabrication,Maintenance_machine_C_fabrication) VALUES ('".$idEventvent."','".$date->format('Y-m-d H:i:s').",'0','0','0','0','0','1')");
+                            
+                            $this->connector->req("INSERT INTO Event_fabrication (Id_fabrication,Id_event_fabrication) VALUES ('".$idFab."','".$idEventvent."'");
+                            
+                            break; 
+                    }
+                }
+            }
+               
+            
+            
+        }
     }
     
     private function Preparation()
     {
         echo 'Lancement de la préparation';
+        
+        $adminbase = new Connect();
+        $adminbase->init('192.168.0.101','root','exia2016',3306);
+        
+        $tab = $adminbase->req("SELECT * FROM Commandes");
+        
+        foreach($tab as $ligne)
+        {
+            $idCondi = $ligne[0];
+            $dateCondi = $ligne[3];
+            $tempsCondi = rand(1,2);
+            $numCmd = $ligne[1];
+            
+            $this->connector->req("INSERT INTO Conditionnement (Id_conditionement, Date_conditionement,Temps_conditionement,Num_cmd) VALUES ('".$idCondi."', '".$dateCondi."', '".$tempsCondi."', '".$numCmd."')");
+            
+            // roduits
+            $tabspe = $adminbase->req("SELECT * FROM Ligne NATURAL JOIN Produit WHERE Id_commande = '".$ligne[0]."'");
+            
+            foreach($tabspe as $value)
+            {
+                $ref = $value[3];
+                $desc = $value[4];
+                $prix = $value[1];
+                $dateDeb = $dateCondi;
+                $tempsPrevu = rand(1,2);
+                $tempsReel = rand(1,3);
+                
+                $finMachineA = rand(0,1);
+                $finMachineB = 0;
+                $finMachineC = 0;
+                
+                $this->connector->req("INSERT INTO Produit_a_conditionner (Reference_produit_a_conditione,Description_produit_a_conditione,Prix_produit_a_conditione,Date_debut_conditionnement,Temps_prevu,Temps_reel,Fin_machine_conditionnement_A,Fin_machine_conditionnement_B,Fin_machine_conditionnement_C,Id_conditionement) VALUES ('".$ref."', '".$desc."', '".$prix."', '".$dateDeb."', '".$tempsPrevu."', '".$tempsReel."', '".$finMachineA."', '".$finMachineB."', '".$finMachineC."', '".$idCondi."')");
+            }
+            
+            
+            // Pièce ----------
+            $tabspe = $adminbase->req("SELECT * FROM Commander_piece NATURAL JOIN Piece WHERE Id_commande = '".$ligne[0]."'");
+            
+            foreach($tabspe as $value)
+            {
+                $ref = $value[3];
+                $desc = $value[4];
+                $prix = $value[1];
+                
+                $str = "INSERT INTO Piece_a_conditione (Reference_piece_a_conditione,Description_piece_a_conditione,Prix_unite_a_conditione,Id_conditionement) VALUES ('".$ref."', '".$desc."', '".$prix."', '".$idCondi."')";
+                
+                $this->connector->req($str);
+                
+                //echo '<br>'.$str;
+            }
+            
+            
+            
+            if ($idCondi < 30)
+            {
+                if (rand(1,25000) == 1)
+                {
+                    $idEventvent = $idCondi;
+                    $date = new DateTime();
+                    
+                    $machine = rand(1,8);
+                    
+                    switch ($machine)
+                    {
+                        case 1:
+                            $this->connector->req("INSERT INTO Evenement_conditionnement (Id_event_conditionnement,Date_event_conditionnement,Panne_machine_A_conditionnement,Panne_machine_B_conditionnement,Panne_machine_C_conditionnement,Maintenance_machine_A_conditionnement,Maintenance_machine_B_conditionnement,Maintenance_machine_C_conditionnement) VALUES ('".$idEventvent."','".$date->format('Y-m-d H:i:s').",'1','0','0','0','0','0')");
+                            
+                            $this->connector->req("INSERT INTO Event_conditionnement (Id_conditionement,Id_event_conditionnement) VALUES ('".$idCondi."','".$idEventvent."'");
+                            
+                            break;
+                        case 2:
+                            $this->connector->req("INSERT INTO Evenement_conditionnement (Id_event_conditionnement,Date_event_conditionnement,Panne_machine_A_conditionnement,Panne_machine_B_conditionnement,Panne_machine_C_conditionnement,Maintenance_machine_A_conditionnement,Maintenance_machine_B_conditionnement,Maintenance_machine_C_conditionnement) VALUES ('".$idEventvent."','".$date->format('Y-m-d H:i:s').",'0','1','0','0','0','0')");
+                            
+                            $this->connector->req("INSERT INTO Event_conditionnement (Id_conditionement,Id_event_conditionnement) VALUES ('".$idCondi."','".$idEventvent."'");
+                            
+                            break;
+                        case 3:
+                            $this->connector->req("INSERT INTO Evenement_conditionnement (Id_event_conditionnement,Date_event_conditionnement,Panne_machine_A_conditionnement,Panne_machine_B_conditionnement,Panne_machine_C_conditionnement,Maintenance_machine_A_conditionnement,Maintenance_machine_B_conditionnement,Maintenance_machine_C_conditionnement) VALUES ('".$idEventvent."','".$date->format('Y-m-d H:i:s').",'0','0','1','0','0','0')");
+                            
+                            $this->connector->req("INSERT INTO Event_conditionnement (Id_conditionement,Id_event_conditionnement) VALUES ('".$idCondi."','".$idEventvent."'");
+                            
+                            break;
+                        case 4:
+                            $this->connector->req("INSERT INTO Evenement_conditionnement (Id_event_conditionnement,Date_event_conditionnement,Panne_machine_A_conditionnement,Panne_machine_B_conditionnement,Panne_machine_C_conditionnement,Maintenance_machine_A_conditionnement,Maintenance_machine_B_conditionnement,Maintenance_machine_C_conditionnement) VALUES ('".$idEventvent."','".$date->format('Y-m-d H:i:s').",'0','0','0','1','0','0')");
+                            
+                            $this->connector->req("INSERT INTO Event_conditionnement (Id_conditionement,Id_event_conditionnement) VALUES ('".$idCondi."','".$idEventvent."'");
+                            
+                            break;
+                        case 5:
+                            $this->connector->req("INSERT INTO Evenement_conditionnement (Id_event_conditionnement,Date_event_conditionnement,Panne_machine_A_conditionnement,Panne_machine_B_conditionnement,Panne_machine_C_conditionnement,Maintenance_machine_A_conditionnement,Maintenance_machine_B_conditionnement,Maintenance_machine_C_conditionnement) VALUES ('".$idEventvent."','".$date->format('Y-m-d H:i:s').",'0','0','0','0','1','0')");
+                            
+                            $this->connector->req("INSERT INTO Event_conditionnement (Id_conditionement,Id_event_conditionnement) VALUES ('".$idCondi."','".$idEventvent."'");
+                            
+                            break;
+                        case 6:
+                            $this->connector->req("INSERT INTO Evenement_conditionnement (Id_event_conditionnement,Date_event_conditionnement,Panne_machine_A_conditionnement,Panne_machine_B_conditionnement,Panne_machine_C_conditionnement,Maintenance_machine_A_conditionnement,Maintenance_machine_B_conditionnement,Maintenance_machine_C_conditionnement) VALUES ('".$idEventvent."','".$date->format('Y-m-d H:i:s').",'1','0','0','0','0','1')");
+                            
+                            $this->connector->req("INSERT INTO Event_conditionnement (Id_conditionement,Id_event_conditionnement) VALUES ('".$idCondi."','".$idEventvent."'");
+                            
+                            break; 
+                    }
+                }
+            }
+            
+            
+        }
+        
     }
     
     private function Administratif()
@@ -103,6 +323,135 @@ class Main {
                 $idpiece++;
             }
         }
+        
+        $this->connector->req("INSERT INTO Pays (Nom_pays, Code_pays) VALUES ('France', 'FR')");
+        $this->connector->req("INSERT INTO Pays (Nom_pays, Code_pays) VALUES ('Angleterre', 'EN')");
+        $this->connector->req("INSERT INTO Pays (Nom_pays, Code_pays) VALUES ('Ukraine', 'UKR')");
+        $this->connector->req("INSERT INTO Pays (Nom_pays, Code_pays) VALUES ('Canada', 'CA')");
+        $this->connector->req("INSERT INTO Pays (Nom_pays, Code_pays) VALUES ('Espagne', 'ES')");
+        $this->connector->req("INSERT INTO Pays (Nom_pays, Code_pays) VALUES ('Italie', 'IT')");
+        $this->connector->req("INSERT INTO Pays (Nom_pays, Code_pays) VALUES ('Allemagne', 'GR')");
+        
+        
+        $max = rand(150,200);
+        for($e = 1 ; $e <= $max ; $e++)
+        {
+            $this->connector->req("INSERT INTO Client (Nom, Prenom, Entreprise,Age) VALUES ( 'Nom".$e."', 'Prenom".$e."', 'Entreprise".$e."','".rand(30,64)."')");
+        }
+        
+        
+        for ($i = 1 ; $i <= 1000 ; $i++)
+        {
+            $idCmd = $i;
+            $numCmd = $i;
+            
+            
+            
+            
+            if ($i <= 30) {
+                $date = new DateTime();
+                $inter = 30 - $i;
+                $intervalle = new DateInterval('P'.$inter.'D');
+                $date->sub($intervalle);
+            }
+            else
+            {
+                $date = new DateTime();
+                $inter = round($i * 0.1,0);
+                $intervalle = new DateInterval('P'.$inter.'D');
+                $date->add($intervalle);
+            }
+            
+            $datefinprevu = $date;
+            $datefinprevu->add(new DateInterval('P'.rand(1,4).'D'));
+            
+            $datelivraison = $datefinprevu;
+            $datelivraison->add(new DateInterval('P'.rand(1,2).'D'));
+            
+            $adresse = '20 Rue Dupont';
+            
+            
+            if (rand(0,100) == 0)
+            {
+                $annulation = 1;
+            }
+            else
+            {
+                $annulation = 0;
+            }
+            
+            // Selection du pays
+            $tab = $this->connector->req("SELECT Id_pays FROM Pays");
+            $Id_pays = $tab[rand(0,count($tab)-1)];
+            
+            
+            
+            
+            $this->connector->req("INSERT INTO Commandes (Id_commande,Num_cmd,Date_passage_cmd,Date_fin_prevu,Date_livraison,Adresse,Annulation,Id_pays) VALUES ('".$idCmd."','".$numCmd."','".$date->format('Y-m-d H:i:s')."','".$datefinprevu->format('Y-m-d H:i:s')."','".$datelivraison->format('Y-m-d H:i:s')."','".$adresse."','".$annulation."','".$Id_pays[0]."')");
+            
+            // Satisfaction
+            if ($i <= 30) {
+                if (rand(1,3) == 2)
+                {
+                    $this->connector->req("UPDATE Commandes SET Reponse_sondage='".rand(0,1)."',Satisfait='Reponses ici',Commentaire='Commentaires ici' WHERE Id_commande='".$idCmd."'");
+                }                
+            }
+            
+            $tab = $this->connector->req("SELECT Id_client FROM Client");
+            $idclient = $tab[rand(0,count($tab)-1)];
+            
+            $this->connector->req("INSERT INTO Possede (Id_commande,Id_client) VALUES ('".$idCmd."','".$idclient[0]."')");
+            
+            
+            
+            
+            // Ajout des produits ou pièces
+            if (rand(0,1) == 0)
+            {
+                $tab = $this->connector->req("SELECT * FROM Produit");
+                
+                $max = rand(2,3) + round($i * 0.01,0);
+                $listeProduits = array();
+                for ($e = 1 ; $e < $max ; $e++)
+                {
+                    array_push($listeProduits,$tab[rand(0,count($tab)-1)]);
+                }
+                
+                $prixCmdTotal = 0;
+                foreach($listeProduits as $ligne)
+                {
+                    //print_r($ligne);
+                    //exit;
+                    $prixCmdTotal = $prixCmdTotal + $ligne[3];
+                    $str = "INSERT INTO Ligne (Prix_produit,Id_produit,Id_commande) VALUES ('".$ligne[3]."','".$ligne[0]."','".$numCmd."')"; 
+                    
+                    $this->connector->req($str);
+                    //echo $str;
+                }
+            }
+            else
+            {
+                $tab = $this->connector->req("SELECT * FROM Piece");
+                
+                $max = rand(15,17) + round($i * 0.05,0);
+                $listePieces = array();
+                for ($e = 1 ; $e < $max ; $e++)
+                {
+                    array_push($listePieces,$tab[rand(0,count($tab)-1)]);
+                }
+                $prixCmdTotal = 0;
+                foreach($listePieces as $ligne) 
+                {
+                    
+                    $prixCmdTotal = $prixCmdTotal + $ligne[3];
+                    $str = "INSERT INTO Commander_piece (Prix_piece,Id_commande,Id_piece) VALUES ('".$ligne[3]."','".$numCmd."','".$ligne[0]."')";
+                    $this->connector->req($str);
+                    
+                    //echo $str;
+                }
+            }
+        }
+            
     }
     
     private function Expedition()
