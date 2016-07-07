@@ -123,7 +123,6 @@ La gestion des commandes dispose de plusieurs indicateurs tels que : <br/>
   - Le nombre de commandes passé sur le nombre de commande expédié <br/>
   - Le	nombre de commandes par pays <br/>
   - Le	nombre de produits par commande <br/>
-  - Le nombre commande annulé sur le nombre de commande passé <br/>
   - Le chiffre d'affaire par commande <br/>
   - La marge par commande <br/>
   - Le nombre de colis expédié par commande <br/>
@@ -139,8 +138,12 @@ La gestion des commandes dispose de plusieurs indicateurs tels que : <br/>
   - Le nombre d'annulation par produit  <br/>
   - Le nombre de réponse au sondage par pays  <br/>
 
+Le but de ces indicateurs est de montrer l'évolution des ventes de l'entreprise ainsi que ces statistique comme le taux d'annulation (nombre d'annulation sur le nombre de commande) ou encore la marge effectué par commande. De plus on peut lier ces données (nombre de piece / de produit / d'annulation) à des données geographique ceci nous permet d'avoir une idée du marché mondial ainsi que de ces évolutions.
+
 
 ###Gestion de la satisfaction 
+
+Le but des indicateurs de satisfaction et de vérifié si l'ensemble des client est convaincu des produit vendus, du temps que cela a mis ainsi que de la qualité de l'expedition. On peut aussi lié la satisfaction au nombre de panne par machine pour voir dans quelle ligne il y a un probleme à resoudre.
 
   - La satisfaction par pays <br/>
   - La satisfaction par nombre de pannes par machine <br/>
@@ -148,6 +151,7 @@ La gestion des commandes dispose de plusieurs indicateurs tels que : <br/>
   - La satisfaction par rapport à l’âge du client  <br/>
 
 ###Gestion de la fabrication 
+Le but de ces indicteurs est de mesuré la fiabilité du systeme de fabrication ainsi que la qualité du systeme de gestion des stocks.
   - Le prix de fabrication sur le prix d’une pièce  <br/>
   - Le nombre de panne par mois et par année  <br/>
   - Le nombre de panne par rapport au délai <br/>
@@ -161,6 +165,7 @@ La gestion des commandes dispose de plusieurs indicateurs tels que : <br/>
 
 
 ###Gestion du conditionnement
+Le but de ces indicteurs est de mesuré la fiabilité du systeme de conditionnement ainsi que sa qualité. 
   -	Le nombre de panne par mois et par année  <br/>
   -	Le nombre de panne par rapport au délai  <br/>
   -	Le nombre de maintenance par années et par mois  <br/>
@@ -171,6 +176,7 @@ La gestion des commandes dispose de plusieurs indicateurs tels que : <br/>
   -	Le nombre de conditionnement sur Nombre de fabrication  <br/>
 
 ###Gestion de l'expedition 
+Ces indicateurs nous permettent d'avoir des statistique sur les colis ainsi que vérifié la qualité du systeme d'expedition. 
   - Le nombre de colis partis en avions   <br/>
   - Le	nombre de colis partis en semi-remorque   <br/>
   - Le	nombre d’expédition par mois et par ans  <br/>
@@ -180,6 +186,7 @@ La gestion des commandes dispose de plusieurs indicateurs tels que : <br/>
 
   
 ###Gestion du CA et de la marge 
+Le but de ces chiffres est de vérifié l'evolution des chiffres de l'entreprise ainsi que de voir nos principaux partenaire commerciaux. 
   - La marge par pays  <br/>
   - La marge par client <br/>
   - Le chiffre d’affaire par pays <br/> 
