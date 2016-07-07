@@ -120,13 +120,25 @@ Dans cette partis tous les indicateurs que nous avons définis seront présenté
 ###Gestion des commandes
 La gestion des commandes dispose de plusieurs indicateurs tels que : <br/>
   -Le nombre de commandes par entreprise  <br/>
-  -Le nombre de commandes passé / nombre de commande expédié <br/>
+  -Le nombre de commandes passé sur le nombre de commande expédié <br/>
   -Le	nombre de commandes par pays <br/>
   -Le	nombre de produits par commande <br/>
-  -Le nombre commande annulé / nombre de commande passer <br/>
+  -Le nombre commande annulé sur le nombre de commande passé <br/>
   -Le chiffre d'affaire par commande <br/>
   -La marge par commande <br/>
-  -Le Nombre de colis expédié par commande <br/>
+  -Le nombre de colis expédié par commande <br/>
+  -Le nombre de produit par entreprise <br/>
+  -Le nombre de pieces par pays  <br/>
+  -Le nombre de pieces par entreprise <br/>
+  -Le nombre de piece par ans et par mois <br/>
+  -Le nombre de produit par ans et par mois <br/>
+  -Le nombre de produit vendu sur le nombre de piece vendu par ans
+  -Le nombre de commande par rapport a l'age
+  -Le nombre d'annulations par entreprise 
+  -Le nombre d'annulation sur le nombre de commandes
+  -Le nombre d'annulation par produit
+  -Le nombre de réponse au sondage par pays
+
 
 ###Gestion de la satisfaction 
 
@@ -136,20 +148,48 @@ La gestion des commandes dispose de plusieurs indicateurs tels que : <br/>
   -La satisfaction par rapport à l’âge du client  <br/>
 
 ###Gestion de la fabrication 
-  -Prix de fabrication sur le prix d’une pièce  <br/>
-  -Nombre de panne par mois et par année  <br/>
-  -Nombre de panne par rapport au délai <br/>
-  -Nombre de maintenance par mois et par années <br/>
-  -Nombre de panne par machine <br/>
-  -Nombre de maintenance par machine <br/>
-  -Nombre de panne sur nombre de maintenance <br/>
+  -Le prix de fabrication sur le prix d’une pièce  <br/>
+  -Le nombre de panne par mois et par année  <br/>
+  -Le nombre de panne par rapport au délai <br/>
+  -Le nombre de maintenance par mois et par années <br/>
+  -Le nombre de panne par machine <br/>
+  -Le nombre de maintenance par machine <br/>
+  -Le nombre de panne sur nombre de maintenance <br/>
+  -La moyenne du temps prévu sur le temps réel <br/>
+  -Le nombre de pièce en stock <br/>
+  -Le temps entre le stock et la vente <br/>
+
+  
 
 
 ###Gestion du conditionnement
+  -	Le nombre de panne par mois et par année  <br/>
+  -	Le nombre de panne par rapport au délai  <br/>
+  -	Le nombre de maintenance par années et par mois  <br/>
+  -	Le nombre de panne par machine  <br/>
+  -	Le nombre de maintenance par machine  <br/>
+  -	La moyenne du temps prévu sur le temps réel <br/>
+  -	Le nombre de panne sur nombre de maintenance par machine  <br/>
+  -	Le nombre de conditionnement sur Nombre de fabrication  <br/>
 
 ###Gestion de l'expedition 
+  -Le nombre de colis partis en avions
+  -Le	nombre de colis partis en semi-remorque
+  -Le	nombre d’expédition par mois et par ans
+  -Le temps prévu de l’expédition sur le temps réel 
+  -Le nombre de colis par entreprise
+  -Le	nombre de colis par pays 
 
+  
 ###Gestion du CA et de la marge 
+  -la marge par pays  <br/>
+  -La marge par client <br/>
+  -le chiffre d’affaire par pays <br/> 
+  -Le chiffre d’affaire par produit <br/>
+  -Le chiffre d’affaire par entreprise <br/>
+  -Le chiffre d'affaire par ans <br/>
+  -Le chiffre d'affaire de l'année sur celui de l'année passé <br/> 
+
 
 ##DashBoards
 ![alt tag](https://github.com/adrienelium/Projet-BI/blob/master/DashBoard_Commande.PNG)
